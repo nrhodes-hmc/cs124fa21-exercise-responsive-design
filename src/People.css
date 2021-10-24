@@ -1,0 +1,62 @@
+
+table {
+    width: 100%;
+}
+
+td {
+    font-size: large;
+}
+
+.header {
+    font-weight: bold;
+    font-size: small;
+    width: 25%;
+}
+
+.name {
+    width: 50%;
+    font-size: small;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+tr:nth-child(odd)  {
+    background: #ddd;
+}
+
+@media screen and (max-width: 600px)  {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr:nth-child(even)  {
+        background: #eee;
+    }
+
+    tr:nth-child(odd)  {
+        background: revert;
+    }
+
+    td {
+        position: relative;
+        padding-left: 14%;
+    }
+
+    td:before {
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 3px;
+        left: 3px;
+        font-weight: bold;
+        font-size: small;
+    }
+
+    td:nth-of-type(1):before { content: "Name"; }
+    td:nth-of-type(2):before { content: "Email"; }
+    td:nth-of-type(3):before { content: "Phone"; }
+
+}

@@ -1,0 +1,26 @@
+
+.person {
+    width: 100%;
+}
+
+.name {
+    font-weight: bold;
+    width: 95%;
+}
+
+.email {
+    width: 95%
+}
+
+.phone {
+    width: 95%
+}
+
+
+.person {
+    border: 1px solid white;
+}
+
+.selected {
+    border-color: blue;
+}
